@@ -8,7 +8,7 @@
 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
-        std::cerr << "Usage: " << argv[0] << " <jpg file>\n";
+        std::cerr << "Usage: " << argv[0] << " [jpg file]\n";
         return 0;
     }
     
@@ -52,6 +52,10 @@ int main(int argc, char* argv[]) {
     sf::Sprite sprite;
     sprite.setTexture(texture);
     
+    window.clear();
+    window.draw(sprite);
+    window.display();
+    
     while (window.isOpen())
     {
         sf::Event event;
@@ -60,9 +64,5 @@ int main(int argc, char* argv[]) {
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-
-        window.clear();
-        window.draw(sprite);
-        window.display();
     }
 }
