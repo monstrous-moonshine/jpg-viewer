@@ -9,4 +9,4 @@ jpeg.o    : jpeg.h
 
 .PHONY : clean
 clean :
-	-rm JPEG\ Viewer app $(objects)
+	-rm app $(objects)
