@@ -10,8 +10,7 @@ a host of clever algorithms to compress image files. In particular, it
 - lays out the 64 components in each 8x8 block in a line following a zig-zag pattern, and applies lossless compression
 (Huffman encoding)
 
-You can learn more about JPEG from [Wikipedia](https://en.wikipedia.org/wiki/JPEG) or the [official specification]
-(https://www.w3.org/Graphics/JPEG/itu-t81.pdf).
+You can learn more about JPEG from [Wikipedia](https://en.wikipedia.org/wiki/JPEG) or the [official specification](https://www.w3.org/Graphics/JPEG/itu-t81.pdf).
 
 ## How to use
 To use the program, you need to first compile it. Assuming you have cloned the repo and `cd`'d into the project
